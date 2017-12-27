@@ -306,14 +306,16 @@ select:-moz-focusring {
 }
 /* line 242, ../sass/form.sass */
 #privacy h1 {
-  font-size: 48px;
+  font-size: 36px;
   color: #44bb6d;
   text-shadow: none;
+  font-weight: 500;
 }
-/* line 246, ../sass/form.sass */
+/* line 247, ../sass/form.sass */
 #privacy h2 {
+  font-size: 24px;
   color: #44bb6d;
-  font-weight: bold;
+  font-weight: 500;
   border-bottom: 3px solid #44bb6d;
   padding-bottom: 10px;
   margin: 30px 0;
@@ -321,57 +323,57 @@ select:-moz-focusring {
 }
 
 @media (max-width: 1200px) {
-  /* line 257, ../sass/form.sass */
+  /* line 259, ../sass/form.sass */
   .container {
     max-width: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 263, ../sass/form.sass */
+  /* line 265, ../sass/form.sass */
   .body {
     padding: 30px;
   }
 
-  /* line 265, ../sass/form.sass */
+  /* line 267, ../sass/form.sass */
   .container > div {
     padding-left: 60px;
     padding-right: 60px;
   }
 }
 @media (max-width: 991px) {
-  /* line 272, ../sass/form.sass */
+  /* line 274, ../sass/form.sass */
   .header #mark {
     display: none;
   }
 
-  /* line 274, ../sass/form.sass */
+  /* line 276, ../sass/form.sass */
   .progress-container {
     text-align: center;
     padding-bottom: 10px;
   }
-  /* line 277, ../sass/form.sass */
+  /* line 279, ../sass/form.sass */
   .progress-container .progress-label {
     color: #44bb6d;
   }
-  /* line 279, ../sass/form.sass */
+  /* line 281, ../sass/form.sass */
   .progress-container .progress {
     border: 1px solid #ddd;
   }
 }
 @media (min-width: 700px) {
-  /* line 283, ../sass/form.sass */
+  /* line 285, ../sass/form.sass */
   .form-container {
     margin-top: -68px;
   }
 }
 @media (max-width: 699px) {
-  /* line 287, ../sass/form.sass */
+  /* line 289, ../sass/form.sass */
   .form-banner {
     background-size: cover;
     display: inline-block;
     padding: 0 !important;
   }
-  /* line 291, ../sass/form.sass */
+  /* line 293, ../sass/form.sass */
   .form-banner h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -379,13 +381,13 @@ select:-moz-focusring {
   }
 }
 @media (max-width: 480px) {
-  /* line 299, ../sass/form.sass */
+  /* line 301, ../sass/form.sass */
   .container > div {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  /* line 302, ../sass/form.sass */
+  /* line 304, ../sass/form.sass */
   .header-form {
     z-index: 999;
     position: absolute;
@@ -398,17 +400,17 @@ select:-moz-focusring {
     left: 0;
   }
 
-  /* line 312, ../sass/form.sass */
+  /* line 314, ../sass/form.sass */
   h1 {
     font-size: 28px;
   }
 
-  /* line 314, ../sass/form.sass */
+  /* line 316, ../sass/form.sass */
   .form-banner {
     background-size: contain;
   }
 
-  /* line 316, ../sass/form.sass */
+  /* line 318, ../sass/form.sass */
   .form-container {
     padding: 0;
     background-size: contain;
@@ -416,86 +418,86 @@ select:-moz-focusring {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 322, ../sass/form.sass */
+  /* line 324, ../sass/form.sass */
   .form-container .form-body {
     padding: 15px;
   }
 
-  /* line 324, ../sass/form.sass */
+  /* line 326, ../sass/form.sass */
   .body {
     padding-bottom: 10px;
   }
-  /* line 326, ../sass/form.sass */
+  /* line 328, ../sass/form.sass */
   .body h2 {
     margin-top: 30px;
   }
 
-  /* line 328, ../sass/form.sass */
+  /* line 330, ../sass/form.sass */
   .card {
     margin-bottom: 20px;
   }
 
-  /* line 330, ../sass/form.sass */
+  /* line 332, ../sass/form.sass */
   .lead {
     width: 100%;
   }
 
-  /* line 332, ../sass/form.sass */
+  /* line 334, ../sass/form.sass */
   .footer {
     padding: 20px 0;
   }
-  /* line 334, ../sass/form.sass */
+  /* line 336, ../sass/form.sass */
   .footer p {
     color: #666;
     font-size: 11px;
     line-height: 14px;
   }
 
-  /* line 339, ../sass/form.sass */
+  /* line 341, ../sass/form.sass */
   #thanks-page .form-banner {
     background-size: 460px;
     border-bottom: none;
     margin-bottom: 0px;
   }
-  /* line 343, ../sass/form.sass */
+  /* line 345, ../sass/form.sass */
   #thanks-page .form-container {
     padding-top: 20px;
     margin-bottom: 220px;
   }
-  /* line 346, ../sass/form.sass */
+  /* line 348, ../sass/form.sass */
   #thanks-page .social-share {
     padding-top: 20px;
   }
-  /* line 348, ../sass/form.sass */
+  /* line 350, ../sass/form.sass */
   #thanks-page .social-share .hashtag {
     display: none;
   }
-  /* line 351, ../sass/form.sass */
+  /* line 353, ../sass/form.sass */
   #thanks-page .form-header h1, #thanks-page .form-header h2 {
     text-shadow: none;
   }
-  /* line 353, ../sass/form.sass */
+  /* line 355, ../sass/form.sass */
   #thanks-page .footer {
     background: white;
   }
 
-  /* line 355, ../sass/form.sass */
+  /* line 357, ../sass/form.sass */
   body#privacy {
     background: white;
   }
-  /* line 357, ../sass/form.sass */
+  /* line 359, ../sass/form.sass */
   body#privacy .body {
     display: block;
   }
-  /* line 359, ../sass/form.sass */
-  body#privacy h1 {
-    font-size: 32px;
-  }
   /* line 361, ../sass/form.sass */
-  body#privacy h2 {
-    font-size: 21px;
+  body#privacy h1 {
+    font-size: 28px;
   }
   /* line 363, ../sass/form.sass */
+  body#privacy h2 {
+    font-size: 18px;
+  }
+  /* line 365, ../sass/form.sass */
   body#privacy .footer {
     background: none;
   }
