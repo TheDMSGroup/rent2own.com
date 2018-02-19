@@ -1,117 +1,84 @@
-/* line 13, ../sass/form.sass */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700");
+/* line 17, ../sass/form.sass */
 .uppercase {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* line 18, ../sass/form.sass */
+/* line 22, ../sass/form.sass */
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  background: white;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  background: #e3e3e3;
   color: #444;
   font-size: 14px;
 }
 
-/* line 24, ../sass/form.sass */
+/* line 28, ../sass/form.sass */
 p, ul, li {
   color: #666;
   line-height: 1.5em;
 }
 
-/* line 28, ../sass/form.sass */
+/* line 32, ../sass/form.sass */
 img {
   max-width: 100%;
 }
 
-/* line 31, ../sass/form.sass */
-li {
-  line-height: 1.5em;
-}
-
-/* line 34, ../sass/form.sass */
+/* line 35, ../sass/form.sass */
 a {
   color: #44bb6d;
   cursor: pointer;
 }
-/* line 37, ../sass/form.sass */
+/* line 38, ../sass/form.sass */
 a:hover {
   color: #369657;
   text-decoration: none;
 }
 
-/* line 41, ../sass/form.sass */
+/* line 42, ../sass/form.sass */
 h1 {
+  color: #44bb6d;
   font-size: 36px;
   font-weight: normal;
-  margin-bottom: 10px;
+  margin: 0 0 40px;
 }
 
-/* line 46, ../sass/form.sass */
-h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-/* line 50, ../sass/form.sass */
-h3 {
-  font-size: 21px;
-  margin-bottom: 10px;
-}
-
-/* line 54, ../sass/form.sass */
-h4 {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-/* line 58, ../sass/form.sass */
-select, input[type="text"] {
+/* line 48, ../sass/form.sass */
+select, input[type="text"], input[type="tel"], input[type="email"] {
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 0;
   padding: 5px 10px;
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-}
-
-/* line 66, ../sass/form.sass */
-.left {
-  float: left;
-}
-
-/* line 69, ../sass/form.sass */
-.container {
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  font-size: 21px;
   width: 100%;
-  max-width: 100%;
-  padding: 0 15px;
+  margin-bottom: 30px;
+  border-width: 0 0 1px 0;
+  border-bottom: 1px solid #444;
 }
 
-/* line 74, ../sass/form.sass */
-.container > div {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* line 79, ../sass/form.sass */
-.content > div {
-  margin-bottom: 40px;
-  clear: both;
-}
-/* line 82, ../sass/form.sass */
-.content > div:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-/* line 87, ../sass/form.sass */
+/* line 60, ../sass/form.sass */
 select:-moz-focusring {
   outline: none;
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
-/* line 93, ../sass/form.sass */
+/* line 65, ../sass/form.sass */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* line 70, ../sass/form.sass */
+.row-inset {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* line 76, ../sass/form.sass */
 .header {
   background: white;
   color: white;
@@ -120,177 +87,160 @@ select:-moz-focusring {
   text-align: center;
   overflow: hidden;
 }
-/* line 100, ../sass/form.sass */
+/* line 83, ../sass/form.sass */
 .header .header-brand a {
   background-image: url("../images/rent2ownadvisor-logo.png");
   background-repeat: no-repeat;
   display: block;
   float: left;
   margin: auto;
-  width: 334px;
-  height: 33px;
-  text-indent: -999px;
+  width: 307px;
+  height: 44px;
+  text-indent: -9999px;
   margin-right: 10px;
 }
-
-/* line 112, ../sass/form.sass */
-.form-banner {
-  padding: 20px 60px;
-  background: white url(../images/rent2own-hero.jpg) no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  min-height: 400px;
-}
-/* line 121, ../sass/form.sass */
-.form-banner h1 {
-  color: white;
-  font-weight: normal;
-  text-align: left;
-  margin: 0;
-  font-size: 48px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+/* line 93, ../sass/form.sass */
+.header p {
+  color: #44bb6d;
+  font-size: 18px;
+  float: right;
+  margin-top: 10px;
 }
 
-/* line 129, ../sass/form.sass */
+/* line 100, ../sass/form.sass */
 .form-container {
   background: white;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  border-radius: 2px;
+  margin-top: 30px;
 }
-/* line 133, ../sass/form.sass */
-.form-container .form-header {
-  text-align: center;
-  background: #44bb6d;
-  padding: 15px 10px;
-  border-radius: 5px 5px 0 0;
-}
-/* line 138, ../sass/form.sass */
-.form-container .form-header h2 {
-  color: white;
-  font-weight: normal;
-  font-size: 20px;
-  margin: 0;
-}
-/* line 143, ../sass/form.sass */
+/* line 105, ../sass/form.sass */
 .form-container .form-body {
-  padding: 20px 30px;
-}
-/* line 145, ../sass/form.sass */
-.form-container .form-footer {
-  text-align: center;
-  margin: 20px 0;
+  padding: 20px 20px 60px;
+  max-width: 900px;
+  margin: auto;
 }
 
+/* line 111, ../sass/form.sass */
+.ll a {
+  color: #44bb6d;
+  cursor: pointer;
+}
+/* line 114, ../sass/form.sass */
+.ll a:hover {
+  color: #369657;
+  text-decoration: none;
+}
+/* line 118, ../sass/form.sass */
+.ll h1 {
+  color: #44bb6d;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0 0 40px;
+}
+/* line 124, ../sass/form.sass */
+.ll select, .ll input[type="text"], .ll input[type="tel"], .ll input[type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-width: 0 0 1px 0;
+  border-bottom: 1px solid #444;
+}
+/* line 136, ../sass/form.sass */
+.ll select:-moz-focusring {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+/* line 141, ../sass/form.sass */
+.ll .progress {
+  height: 8px;
+  border-radius: 0;
+  background: none;
+}
+/* line 145, ../sass/form.sass */
+.ll .progress .progress-bar {
+  border-radius: 0;
+  background: #44bb6d;
+}
 /* line 149, ../sass/form.sass */
+.ll .btn, .ll .btn-primary {
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 21px !important;
+  padding: 12px 30px !important;
+  background: #f06322 !important;
+  border: none !important;
+  border-radius: 5px;
+  white-space: normal;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0;
+  margin: 20px 0;
+}
+/* line 162, ../sass/form.sass */
+.ll .btn:hover, .ll .btn-primary:hover {
+  color: white;
+  background: #d14c0e !important;
+  text-shadow: rgba(0, 0, 0, 0.6) 0 -1px 0;
+  top: 1px;
+  position: relative;
+}
+/* line 169, ../sass/form.sass */
+.ll .disclaimer {
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 173, ../sass/form.sass */
+.ll label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  display: block;
+  font-weight: normal;
+}
+
+/* line 182, ../sass/form.sass */
 .footer {
   clear: both;
   overflow: auto;
-  padding: 30px 60px;
+  padding: 30px 0;
   text-align: center;
 }
-/* line 154, ../sass/form.sass */
-.footer .footer-logo {
-  width: 235px;
-}
-/* line 156, ../sass/form.sass */
+/* line 187, ../sass/form.sass */
 .footer p {
   color: #999;
   text-align: center;
 }
 
-/* line 163, ../sass/form.sass */
-#privacy h1 {
-  font-size: 30px;
-  color: #44bb6d;
-  text-shadow: none;
-  font-weight: 500;
-}
-/* line 168, ../sass/form.sass */
-#privacy h2 {
-  font-size: 20px;
-  color: #44bb6d;
-  font-weight: 500;
-  border-bottom: 3px solid #44bb6d;
-  padding-bottom: 10px;
-  margin: 20px 0 10px;
-  text-align: left;
-}
-
-@media (max-width: 1200px) {
-  /* line 180, ../sass/form.sass */
-  .container {
-    max-width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  /* line 186, ../sass/form.sass */
-  .body {
-    padding: 30px;
-  }
-
-  /* line 188, ../sass/form.sass */
-  .container > div {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media (min-width: 769px) {
-  /* line 195, ../sass/form.sass */
-  .form-container {
-    margin-top: -68px;
-  }
-}
 @media (max-width: 768px) {
-  /* line 199, ../sass/form.sass */
-  .form-banner {
-    background-size: cover;
-    display: inline-block;
-    padding: 0 !important;
+  /* line 195, ../sass/form.sass */
+  .header .header-brand a {
+    max-width: 320px;
+    margin: auto;
+    float: none;
+    background-size: contain;
   }
+  /* line 200, ../sass/form.sass */
+  .header p {
+    float: none;
+    margin: auto;
+  }
+
   /* line 203, ../sass/form.sass */
-  .form-banner h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-}
-@media (max-width: 480px) {
-  /* line 211, ../sass/form.sass */
-  .container > div {
-    padding-left: 15px;
-    padding-right: 15px;
+  .row-inset {
+    padding: 0 20px;
   }
 
-  /* line 214, ../sass/form.sass */
-  .form-banner {
-    background-size: contain;
-  }
-  /* line 216, ../sass/form.sass */
-  .form-banner h1 {
-    font-size: 28px;
-  }
-
-  /* line 218, ../sass/form.sass */
+  /* line 205, ../sass/form.sass */
   .form-container {
-    padding: 0;
-    background-size: contain;
-    margin-bottom: 20px;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  /* line 224, ../sass/form.sass */
-  .form-container .form-body {
-    padding: 15px;
-  }
-
-  /* line 229, ../sass/form.sass */
-  #privacy h1 {
-    font-size: 28px;
-  }
-  /* line 231, ../sass/form.sass */
-  #privacy h2 {
-    font-size: 18px;
+    margin: 0 -20px;
+    border-radius: 0;
   }
 }

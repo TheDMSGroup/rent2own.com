@@ -1,0 +1,322 @@
+@import compass/css3
+@import carousel
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700')
+
+$black: #000
+$gray: #9ea3a4
+$green: #44bb6d
+$orange: #f06322
+
+$primary: $green !default
+$primary-md: darken($primary, 10%) !default
+$secondary: $orange
+$secondary-md: darken($secondary, 10%) !default
+
+
+// -------------------------- COMMON --------------------------------------------------
+
+// extendables
+.uppercase
+  text-transform: uppercase
+  letter-spacing: 1px
+
+// common
+body
+  font-family: "Work Sans", Helvetica, Arial, sans-serif
+  background: white
+  color: #444
+  font-size: 14px
+
+p, ul, li
+  color: #666
+  line-height: 1.5em
+
+img
+  max-width: 100%
+
+li
+  line-height: 1.5em
+
+a
+  color: $primary
+  cursor: pointer
+  &:hover
+    color: $primary-md
+    text-decoration: none
+
+h1
+  font-size: 36px
+  font-weight: normal
+  margin-bottom: 10px
+
+h2
+  font-size: 28px
+  margin-bottom: 10px
+  font-weight: bold
+
+h3
+  font-size: 21px
+  margin-bottom: 10px
+
+h4
+  font-size: 16px
+  font-weight: bold
+
+select, input[type="text"]
+  border: 1px solid #ccc
+  border-radius: 3px
+  padding: 5px 10px
+  box-sizing: border-box
+  font-family: "Work Sans", Helvetica, Arial, sans-serif
+  font-size: 16px
+
+.left
+  float: left
+
+.container
+  width: 100%
+  max-width: 100%
+  padding: 0
+
+.row-inset
+  max-width: 1100px
+  margin: auto
+  padding: 0 15px
+
+.content
+  > div
+    margin-bottom: 40px
+    clear: both
+    &:after
+      content: ""
+      clear: both
+      display: block
+
+select:-moz-focusring
+  outline: none
+  color: transparent
+  text-shadow: 0 0 0 #000
+
+// header
+.header
+  background: white
+  color: white
+  padding-top: 15px
+  padding-bottom: 15px
+  text-align: center
+  overflow: hidden
+  .header-brand a
+    background-image: url('../images/rent2ownadvisor-logo.png')
+    background-repeat: no-repeat
+    display: block
+    float: left
+    margin: auto
+    width: 307px
+    height: 44px
+    text-indent: -9999px
+    margin-right: 10px
+
+// form
+.form-banner
+  position: relative
+  min-height: 400px
+  > div
+  h1
+    color: white
+    font-weight: 600
+    margin: 0
+    font-size: 48px
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.15)
+
+.form-div
+  max-width: 600px
+  margin: auto
+  input, select, .btn
+    display: block
+    width: 60%
+    margin: 0 auto 15px
+  &.joined-button
+    input, .btn
+      display: inline
+      margin: 0
+      height: 46px
+      box-sizing: border-box
+    input
+      width: 40% !important
+      border-radius: 5px 0 0 5px
+    .btn
+      width: auto
+      border-radius: 0 5px 5px 0
+      position: relative
+      left: -5px
+      top: -2px
+
+.zip-form
+  text-align: center
+  p
+    color: white
+    font-size: 21px
+
+
+.btn, .btn-primary
+  font-weight: bold
+  color: white
+  font-size: 18px
+  padding: 12px 30px !important
+  background: $secondary !important
+  border: none !important
+  border-radius: 5px
+  white-space: normal
+  cursor: pointer
+  text-shadow: rgba(255,255,255,0.2) 0 1px 0
+  &:hover
+    color: white
+    background: $secondary-md !important
+    text-shadow: rgba(255,255,255,0.6) 0 1px 0
+    top: 1px
+    position: relative
+.btn-sm
+  padding: 8px 20px !important
+  font-size: 16px
+  border-radius: 2px
+
+.form-container
+  background: white
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15)
+  border-radius: 5px
+  .form-header
+    text-align: center
+    background: $primary
+    padding: 15px 10px
+    border-radius: 5px 5px 0 0
+    h2
+      color: white
+      font-weight: normal
+      font-size: 20px
+      margin: 0
+  .form-body
+    padding: 20px 30px
+  .form-footer
+    text-align: center
+    margin: 20px 0
+
+.body
+  background: #e3e3e3
+
+.card.search-filter
+  padding: 10px 10px 0
+  .dropdown
+    display: inline-block
+    background: #f1f1f1
+    color: #999
+    padding: 10px 15px
+    border-radius: 5px
+    margin-left: 5px
+    margin-bottom: 10px
+  .fa-search
+    font-size: 24px
+    color: $primary
+    position: relative
+    top: 3px
+
+.card
+  background: white
+  border-radius: 5px
+  padding: 20px 10px
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15)
+  text-align: center
+  margin-bottom: 10px
+  position: relative
+  transition: all 0.2s
+  .logo
+    width: 90px
+    margin-bottom: 5px
+    margin-top: 5px
+  .md-48
+    font-size: 48px
+    margin-bottom: 5px
+  a:hover
+    text-decoration: none !important
+  &:hover
+    position: relative
+    top: 1px
+    -webkit-transform: scale(1.05)
+    -ms-transform: scale(1.05)
+    transform: scale(1.05)
+  h3
+    font-weight: bold
+  table
+    .svg-inline--fa
+      color: $primary
+  .btn
+    min-width: 80%
+
+.footer
+  clear: both
+  overflow: auto
+  padding: 30px 60px
+  text-align: center
+  p
+    color: #999
+    text-align: center
+
+// privacy and terms
+
+#privacy
+  h1
+    font-size: 30px
+    color: $primary
+    text-shadow: none
+    font-weight: 500
+  h2
+    font-size: 20px
+    color: $primary
+    font-weight: 500
+    border-bottom: 3px solid $primary
+    padding-bottom: 10px
+    margin: 20px 0 10px
+    text-align: left
+
+//////////////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////
+
+@media (max-width: 1200px)
+  .container
+    max-width: 100%
+
+//bootstrap breakpoint
+
+@media (min-width: 992px)
+  .body
+    padding: 30px
+
+// Responsive: Landscape phone to desktop/tablet
+
+@media (min-width: 769px)
+
+@media (max-width: 768px)
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media (max-width: 480px)
+  .container > div
+    padding-left: 15px
+    padding-right: 15px
+  .form-banner
+    background-size: contain
+    h1
+      font-size: 28px
+  .form-container
+    padding: 0
+    background-size: contain
+    margin-bottom: 20px
+    margin-left: -15px
+    margin-right: -15px
+    .form-body
+      padding: 15px
+
+  // privacy
+  #privacy
+    h1
+      font-size: 28px
+    h2
+      font-size: 18px

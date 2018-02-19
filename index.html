@@ -12,8 +12,10 @@
     <!-- Bootstrap theme -->
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="stylesheets/form.css" rel="stylesheet">
+    <link href="stylesheets/common.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" rel="stylesheet">
 
     <!-- https://realfavicongenerator.net/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
@@ -40,40 +42,150 @@
   </head>
   <body>
     <div class="container main theme-showcase" role="main">
-      <div class="form-nav header row">
-        <div class="header-brand"><a href="index.html">Rent 2 Own Advisor</a></div>
+      <div class="form-nav header">
+        <div class="row-inset">
+          <div class="header-brand"><a href="index.html">Rent 2 Own Advisor</a></div>
+        </div>
       </div><!-- end header -->
 
       <div class="form-banner row">
-        <div class="col-sm-6">
-          <h1>Search, Find, Apply for over <strong>148 Homes</strong> in your&nbsp;area.</h1>
-        </div>
-        <div class="col-sm-6">
-          <div class="form-container">
-            <div class="form-header">
-              <h2>Find a great home in your desired&nbsp;location</h2>
-            </div>
-            <div class="form-body">
-              <script src="https://studio.dmsengage.com/forms/dist/v1.js"></script>
-              <script>crm.embed({ account: "DMS", target: "23"});</script>
-              <div class="form-footer">
-                <a target="_blank" href="terms.html">Terms of Service</a> | <a target="_blank" href="privacy.html">Privacy Policy</a>
+        <div id="carousel" class="carousel slide carousel-fade">
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol> -->
+
+          <div class="carousel-inner">
+            <div class="active item"></div>
+            <!-- <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+          </div>
+
+          <!-- <a class="carousel-control left" href="#carousel" data-slide="prev">‹</a>
+          <a class="carousel-control right" href="#carousel" data-slide="next">›</a> -->
+
+          <div class="carousel-overlay zip-form col-md-8 col-md-offset-2">
+            <h1>Stop renting. Start Owning!</h1>
+            <p>Great deals on homes in your area</p>
+            <form action="form.html">
+              <div class="form-div joined-button">
+                <input type="text" placeholder="Zip Code or City, ST">
+                <input type="submit" value="Search" class="btn btn-primary">
               </div>
-            </div>
-          </div><!-- end form-container -->
+            </form>
+          </div>
         </div>
+
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                 $('.carousel').carousel({
+                     interval: 5000
+                 })
+            });
+        </script>
+
       </div><!-- end form-banner -->
 
-      <div class="footer row">
-        <div class="col-sm-12">
-          <p class="disclosure">
-            <img class="footer-logo" src="images/rent2ownadvisor-logo.png" alt="Rent 2 Own Advisor">
-            <br><br>
-            © 2018 Rent2OwnAdvisor. All Rights Reserved. Rent2OwnAdvisor and the Rent2OwnAdvisor logo are trademarks or registered trademarks of Rent2OwnAdvisor. All third party logos and trademarks mentioned are the property of their respective owners.
-            <br><br>
-            <a target="_blank" href="terms.html">Terms of Service</a> | <a target="_blank" href="privacy.html">Privacy Policy</a> <!-- | <a href="">Unsubscribe</a> -->
-          </p>
-        </div>
+      <div class="body">
+        <div class="row-inset">
+          <div class="row text-center">
+            <div class="col-md-12 quick-results">
+              <h2>Featured homes near Clearwater, FL</h2>
+              <div class="card search-filter">
+                <i class="fas fa-search"></i>
+                <div class="dropdown">
+                  <i class="fas fa-bed"></i> 2+ Bedrooms
+                </div>
+                <div class="dropdown">
+                  <i class="fas fa-shower"></i> 2+ Bathrooms
+                </div>
+                <div class="dropdown">
+                  <i class="fas fa-expand"></i> 1,200+ Sq Ft
+                </div>
+                <div class="dropdown">
+                  <i class="fas fa-dollar-sign"></i> $1,200-3,200/mo
+                </div>
+              </div><!-- end search-filter -->
+            </div><!-- end quick-results -->
+          </div><!-- end row -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/apartments/clearwater.jpg" alt="Clearwater Apartment">
+                <h3>Clearwater Beach, FL</h3>
+                <table class="table">
+                  <tr>
+                    <td><i class="fas fa-bed"></i> 2 bed</td>
+                    <td><i class="fas fa-shower"></i> 2 bath</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-expand"></i> 1,315 sqft.</td>
+                    <td><i class="fas fa-dollar-sign"></i> <strong>1,500/mo</strong></td>
+                  </tr>
+                </table>
+                <div class="card-action">
+                  <a href="form.html" class="btn btn-sm">See Details</a>
+                </div>
+              </div>
+            </div><!-- end col-md-4 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/apartments/palmharbor.jpg" alt="Palm Harbor Apartment">
+                <h3>Palm Harbor, FL</h3>
+                <table class="table">
+                  <tr>
+                    <td><i class="fas fa-bed"></i> 3 bed</td>
+                    <td><i class="fas fa-shower"></i> 2 bath</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-expand"></i> 1,500 sqft.</td>
+                    <td><i class="fas fa-dollar-sign"></i> <strong>1,640/mo</strong></td>
+                  </tr>
+                </table>
+                <div class="card-action">
+                  <a href="form.html" class="btn btn-sm">See Details</a>
+                </div>
+              </div>
+            </div><!-- end col-md-4 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/apartments/stpetersburg.jpg" alt="St Petersburg Apartment">
+                <h3>St Petersburg, FL</h3>
+                <table class="table">
+                  <tr>
+                    <td><i class="fas fa-bed"></i> 3 bed</td>
+                    <td><i class="fas fa-shower"></i> 3 bath</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-expand"></i> 1,484 sqft.</td>
+                    <td><i class="fas fa-dollar-sign"></i> <strong>3,200/mo</strong></td>
+                  </tr>
+                </table>
+                <div class="card-action">
+                  <a href="form.html" class="btn btn-sm">See Details</a>
+                </div>
+              </div>
+            </div><!-- end col-md-4 -->
+          </div><!-- end row -->
+        </div><!-- end row-inset -->
+      </div><!-- end body -->
+
+      <div class="footer">
+        <div class="row-inset">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="disclosure">
+                <img class="footer-logo" src="images/rent2ownadvisor-logo.png" alt="Rent 2 Own Advisor">
+                <br><br>
+                © 2018 Rent2OwnAdvisor. All Rights Reserved. Rent2OwnAdvisor and the Rent2OwnAdvisor logo are trademarks or registered trademarks of Rent2OwnAdvisor. All third party logos and trademarks mentioned are the property of their respective owners.
+                <br><br>
+                <a target="_blank" href="terms.html">Terms of Service</a> | <a target="_blank" href="privacy.html">Privacy Policy</a> <!-- | <a href="">Unsubscribe</a> -->
+              </p>
+            </div>
+          </div><!-- end row -->
+        </div><!-- end row-inset -->
       </div><!-- end footer row -->
 
     </div> <!-- /container -->
